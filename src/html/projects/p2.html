@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAÉ12 – Phase II | Lorik Garrigues</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../src/assets/icons/projects.png">
+    <link rel="stylesheet" href="../../../src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="../../../src/html/projects.html">
+        <i class="fas fa-arrow-left"></i>
+        <span>Retour</span>
+    </a>
+</header>
+
+<!-- PROJECT CONTENT -->
+<div class="project-content">
+
+    <!-- TITLE -->
+    <div class="title">
+        <h1>S'initier aux réseaux informatiques – Phase II</h1>
+        <div class="title-icons">
+            <i class="fa-regular fa-folder"></i>
+            <i class="fa-solid fa-video"></i>
+        </div>
+    </div>
+
+    <p class="sub">SAÉ12 · 1ère année · Difficulté : ★☆☆☆</p>
+
+    <!-- DESCRIPTION -->
+    <p class="text">
+        <span>Description</span><br><br>
+        Cette seconde phase du projet approfondit l’analyse du
+        <strong>fonctionnement des réseaux</strong> en abordant à la fois
+        la circulation des données et leur impact énergétique.
+        <br><br>
+        J’ai analysé les chemins réseau à l’aide de <strong>traceroute</strong>
+        afin d’identifier les routeurs traversés, les entités propriétaires
+        des adresses IP et les numéros d’AS.
+        <br><br>
+        Des captures de trafic ont également été réalisées avec
+        <strong>Wireshark</strong>, ainsi que des mesures de consommation
+        énergétique liées à l’utilisation d’un ordinateur.
+    </p>
+
+    <!-- COMPÉTENCES -->
+    <p class="text">
+        <span>Compétences développées</span><br><br>
+        • Analyse de routes réseau (traceroute)<br>
+        • Identification d’AS et d’opérateurs réseau<br>
+        • Analyse de trafic réseau (Wireshark)<br>
+        • Mesure de consommation énergétique<br>
+        • Sensibilisation à l’impact environnemental du numérique
+    </p>
+
+    <!-- VISUELS -->
+    <div class="illustration">
+
+        <span>Rapport (aperçu)</span><br><br>
+
+        <!-- MINIATURE PDF -->
+        <img 
+            src="../../../src/assets/projects/p2-preview.jpg"
+            alt="Aperçu rapport SAÉ12 Phase II"
+            class="project-image"
+            onclick="openZoom(this.src)"
+        >
+
+        <br><br>
+
+        <a href="../../../src/assets/projects/SAÉ12 - Phase II.pdf"
+           class="project-button"
+           target="_blank">
+            Ouvrir le rapport PDF
+        </a>
+
+        <br><br><br>
+
+        <span>Vidéo de présentation</span><br><br>
+
+        <video width="100%" controls>
+            <source src="../../../src/assets/projects/SAÉ12 - Phase II.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+
+    </div>
+
+</div>
+
+<!-- ZOOM IMAGE -->
+<div class="image-zoom" id="imageZoom" onclick="closeZoom()">
+    <img id="zoomedImage" src="" alt="Zoom projet">
+</div>
+
+<script src="../../../src/js/main.js"></script>
+
+<script>
+function openZoom(src) {
+    const zoom = document.getElementById("imageZoom");
+    const img = document.getElementById("zoomedImage");
+    img.src = src;
+    zoom.classList.add("active");
+}
+
+function closeZoom() {
+    document.getElementById("imageZoom").classList.remove("active");
+}
+</script>
+
+</body>
+</html>

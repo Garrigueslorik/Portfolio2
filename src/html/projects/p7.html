@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet OSINT - Lorik Garrigues</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../src/assets/icons/projects.png">
+    <link rel="stylesheet" href="../../../src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="../../../src/html/projects.html">
+        <i class="fas fa-arrow-left"></i>
+        <span>Retour</span>
+    </a>
+</header>
+
+<!-- PROJECT CONTENT -->
+<div class="project-content">
+
+    <div class="title">
+        <h1>Enquête OSINT</h1>
+        <div class="title-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <p class="sub">OSINT · 2ème année · Cybersécurité · Difficulté : ★★★☆</p>
+
+    <!-- DESCRIPTION -->
+    <p class="text">
+        <span>Description</span><br><br>
+        Ce projet avait pour objectif de mener une
+        <strong>enquête OSINT complète</strong>
+        sur une personnalité publique en utilisant
+        exclusivement des sources ouvertes et légales.
+        <br><br>
+        J’ai appliqué une méthodologie rigoureuse de
+        collecte, de recoupement et d’analyse de données
+        afin de reconstituer un profil numérique cohérent,
+        tout en évaluant les risques liés à l’exposition en ligne.
+    </p>
+
+    <!-- METHODS -->
+    <p class="text">
+        <span>Méthodologie & outils</span><br><br>
+        • Google Dorking<br>
+        • Analyse des réseaux sociaux<br>
+        • Sources archivées et OSINT passif<br>
+        • Recoupement temporel des informations<br>
+        • Initiation à la GEOINT
+    </p>
+
+    <!-- SKILLS -->
+    <p class="text">
+        <span>Compétences développées</span><br><br>
+        • Investigation OSINT<br>
+        • Analyse critique de l’information<br>
+        • Méthodologie d’enquête numérique<br>
+        • Sensibilisation aux risques cyber<br>
+        • Respect du cadre légal
+    </p>
+
+    <!-- VISUAL -->
+    <div class="illustration">
+
+        <span>Aperçu du rapport OSINT</span><br><br>
+
+        <img
+            src="../../../src/assets/projects/p7-preview.jpg"
+            alt="Projet OSINT – aperçu"
+            class="project-image"
+            onclick="openZoom(this.src)"
+        >
+
+        <br><br>
+
+        <a href="../../../src/assets/projects/Rapport_OSINT_Poupard.pdf"
+           class="project-button"
+           target="_blank">
+            Ouvrir le rapport PDF
+        </a>
+
+    </div>
+
+</div>
+
+<!-- IMAGE ZOOM -->
+<div class="image-zoom" id="imageZoom" onclick="closeZoom()">
+    <img id="zoomedImage" src="" alt="Zoom OSINT">
+</div>
+
+<script>
+function openZoom(src) {
+    document.getElementById("zoomedImage").src = src;
+    document.getElementById("imageZoom").classList.add("active");
+}
+function closeZoom() {
+    document.getElementById("imageZoom").classList.remove("active");
+}
+</script>
+
+</body>
+</html>

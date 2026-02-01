@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAÉ15 – Projet Thales | Lorik Garrigues</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../src/assets/icons/projects.png">
+    <link rel="stylesheet" href="../../../src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="../../../src/html/projects.html">
+        <i class="fas fa-arrow-left"></i>
+        <span>Retour</span>
+    </a>
+</header>
+
+<!-- PROJECT CONTENT -->
+<div class="project-content">
+
+    <!-- TITLE -->
+    <div class="title">
+        <h1>Projet Thales – Phase de développement</h1>
+        <div class="title-icons">
+            <i class="fa-solid fa-code"></i>
+        </div>
+    </div>
+
+    <p class="sub">SAÉ15 · 1ère année · Projet industriel (Thales) · Difficulté : ★★★☆</p>
+
+    <!-- DESCRIPTION -->
+    <p class="text">
+        <span>Description</span><br><br>
+        Cette phase correspond au
+        <strong>développement complet du système fonctionnel</strong>
+        du projet mené avec Thales.
+        L’objectif était de permettre la
+        <strong>prise de photos à distance</strong>
+        via un Raspberry Pi et un Pico,
+        puis leur affichage sécurisé sur une
+        application web dynamique.
+        <br><br>
+        J’ai travaillé sur l’ensemble de la chaîne :
+        du code embarqué jusqu’au back-end web,
+        avec une attention particulière portée à
+        la <strong>sécurité, la gestion des rôles et des sessions</strong>.
+    </p>
+
+    <!-- TECH STACK -->
+    <p class="text">
+        <span>Architecture & technologies</span><br><br>
+        • PHP / HTML / CSS (application web)<br>
+        • MySQL (base de données relationnelle)<br>
+        • Python (scripts embarqués)<br>
+        • Raspberry Pi & Pico<br>
+        • Architecture client–serveur
+    </p>
+
+    <!-- FEATURES -->
+    <p class="text">
+        <span>Fonctionnalités clés</span><br><br>
+        • Authentification sécurisée avec gestion des rôles<br>
+        • Base de données utilisateurs, images et logs<br>
+        • Capture d’images pilotée à distance<br>
+        • Galerie web dynamique<br>
+        • Journalisation des actions consultable par les rôles autorisés
+    </p>
+
+    <!-- SKILLS -->
+    <p class="text">
+        <span>Compétences développées</span><br><br>
+        • Développement back-end et bases de données<br>
+        • Programmation embarquée<br>
+        • Sécurité applicative (sessions, droits, logs)<br>
+        • Conception d’architecture logicielle<br>
+        • Travail en conditions industrielles
+    </p>
+
+    <!-- VISUAL -->
+    <div class="illustration">
+
+        <span>Phase de code – aperçu</span><br><br>
+
+        <img
+            src="../../../src/assets/projects/p6-preview.jpg"
+            alt="Projet Thales – phase de code"
+            class="project-image"
+            onclick="openZoom(this.src)"
+        >
+
+        <br><br>
+
+        <a href="../../../src/assets/projects/SAÉ15th.pdf"
+           class="project-button"
+           target="_blank">
+            Ouvrir le document PDF
+        </a>
+
+    </div>
+
+</div>
+
+<!-- IMAGE ZOOM -->
+<div class="image-zoom" id="imageZoom" onclick="closeZoom()">
+    <img id="zoomedImage" src="" alt="Zoom projet">
+</div>
+
+<script>
+function openZoom(src) {
+    const zoom = document.getElementById("imageZoom");
+    const img = document.getElementById("zoomedImage");
+    img.src = src;
+    zoom.classList.add("active");
+}
+
+function closeZoom() {
+    document.getElementById("imageZoom").classList.remove("active");
+}
+</script>
+
+</body>
+</html>

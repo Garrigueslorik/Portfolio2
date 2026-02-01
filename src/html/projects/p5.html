@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAÉ15 | Lorik Garrigues</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../src/assets/icons/projects.png">
+    <link rel="stylesheet" href="../../../src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="../../../src/html/projects.html">
+        <i class="fas fa-arrow-left"></i>
+        <span>Retour</span>
+    </a>
+</header>
+
+<!-- PROJECT CONTENT -->
+<div class="project-content">
+
+    <!-- TITLE -->
+    <div class="title">
+        <h1>Traiter des données</h1>
+        <div class="title-icons">
+            <i class="fa-regular fa-folder"></i>
+        </div>
+    </div>
+
+    <p class="sub">SAÉ15 · 1ère année · Projet industriel (Thales) · Difficulté : ★★★☆</p>
+
+    <!-- DESCRIPTION -->
+    <p class="text">
+        <span>Description</span><br><br>
+        Ce projet a été réalisé en collaboration avec
+        <strong>Thales</strong> dans le cadre de la SAÉ15.
+        L’objectif était de concevoir un
+        <strong>système complet et sécurisé</strong>
+        permettant la capture d’images de bancs de test
+        et leur consultation via une application web.
+        <br><br>
+        Le système repose sur un microcontrôleur
+        <strong>Pico</strong> et un <strong>Raspberry Pi</strong>
+        pour la prise de photos, ainsi qu’une application
+        web assurant le stockage, l’affichage et la gestion
+        sécurisée des données.
+    </p>
+
+    <!-- FEATURES -->
+    <p class="text">
+        <span>Fonctionnalités principales</span><br><br>
+        • Gestion hiérarchisée des comptes (utilisateur, modérateur, administrateur)<br>
+        • Système d’authentification et de contrôle des accès<br>
+        • Capture d’images à distance via Raspberry Pi<br>
+        • Galerie web dynamique et sécurisée<br>
+        • Base de données pour utilisateurs, images et journaux d’activité
+    </p>
+
+    <!-- COMPÉTENCES -->
+    <p class="text">
+        <span>Compétences développées</span><br><br>
+        • Développement web full-stack<br>
+        • Programmation embarquée (Pico / Raspberry Pi)<br>
+        • Gestion des droits et sécurité applicative<br>
+        • Conception de bases de données<br>
+        • Travail en mode projet avec un partenaire industriel
+    </p>
+
+    <!-- VISUELS -->
+    <div class="illustration">
+
+        <span>Rapport – aperçu</span><br><br>
+
+        <!-- IMAGE PREVIEW -->
+        <img 
+            src="../../../src/assets/projects/p5-preview.jpg"
+            alt="Aperçu projet SAÉ15"
+            class="project-image"
+            onclick="openZoom(this.src)"
+        >
+
+        <br><br>
+
+        <a href="../../../src/assets/projects/SAÉ15.pdf"
+           class="project-button"
+           target="_blank">
+            Ouvrir le rapport PDF
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ZOOM IMAGE -->
+<div class="image-zoom" id="imageZoom" onclick="closeZoom()">
+    <img id="zoomedImage" src="" alt="Zoom projet">
+</div>
+
+<script src="../../../src/js/main.js"></script>
+
+<script>
+function openZoom(src) {
+    const zoom = document.getElementById("imageZoom");
+    const img = document.getElementById("zoomedImage");
+    img.src = src;
+    zoom.classList.add("active");
+}
+
+function closeZoom() {
+    document.getElementById("imageZoom").classList.remove("active");
+}
+</script>
+
+</body>
+</html>

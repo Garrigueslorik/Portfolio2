@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAÉ13 | Lorik Garrigues</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../src/assets/icons/projects.png">
+    <link rel="stylesheet" href="../../../src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="../../../src/html/projects.html">
+        <i class="fas fa-arrow-left"></i>
+        <span>Retour</span>
+    </a>
+</header>
+
+<!-- PROJECT CONTENT -->
+<div class="project-content">
+
+    <!-- TITLE -->
+    <div class="title">
+        <h1>Découvrir un dispositif de transmission</h1>
+        <div class="title-icons">
+            <i class="fa-regular fa-folder"></i>
+        </div>
+    </div>
+
+    <p class="sub">SAÉ13 · 1ère année · Difficulté : ★☆☆☆</p>
+
+    <!-- DESCRIPTION -->
+    <p class="text">
+        <span>Description</span><br><br>
+        Ce projet avait pour objectif d’étudier un
+        <strong>support de transmission filaire</strong>,
+        en l’occurrence le <strong>câble coaxial</strong>,
+        utilisé pour la transmission de signaux numériques.
+        <br><br>
+        Une première phase théorique a permis d’analyser ses
+        propriétés physiques (atténuation, impédance, retard
+        de propagation), suivie d’une validation expérimentale
+        en laboratoire.
+        <br><br>
+        Les résultats théoriques ont été modélisés à l’aide de
+        <strong>MATLAB / Octave</strong>, puis comparés aux
+        mesures réelles effectuées avec du matériel de test
+        (oscilloscope, générateur).
+    </p>
+
+    <!-- COMPÉTENCES -->
+    <p class="text">
+        <span>Compétences développées</span><br><br>
+        • Transmission filaire et signaux numériques<br>
+        • Modélisation et analyse de données techniques<br>
+        • Utilisation de MATLAB / Octave<br>
+        • Mesures électroniques (oscilloscope, générateur)<br>
+        • Validation expérimentale de modèles théoriques
+    </p>
+
+    <!-- VISUELS -->
+    <div class="illustration">
+
+        <span>Rapport (aperçu)</span><br><br>
+
+        <!-- MINIATURE PDF -->
+        <img 
+            src="../../../src/assets/projects/p3-preview.jpg"
+            alt="Aperçu rapport SAÉ13"
+            class="project-image"
+            onclick="openZoom(this.src)"
+        >
+
+        <br><br>
+
+        <a href="../../../src/assets/projects/SAÉ13.pdf"
+           class="project-button"
+           target="_blank">
+            Ouvrir le rapport PDF
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ZOOM IMAGE -->
+<div class="image-zoom" id="imageZoom" onclick="closeZoom()">
+    <img id="zoomedImage" src="" alt="Zoom projet">
+</div>
+
+<script src="../../../src/js/main.js"></script>
+
+<script>
+function openZoom(src) {
+    const zoom = document.getElementById("imageZoom");
+    const img = document.getElementById("zoomedImage");
+    img.src = src;
+    zoom.classList.add("active");
+}
+
+function closeZoom() {
+    document.getElementById("imageZoom").classList.remove("active");
+}
+</script>
+
+</body>
+</html>

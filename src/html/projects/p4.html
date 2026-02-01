@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAÉ11 | Lorik Garrigues</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../src/assets/icons/projects.png">
+    <link rel="stylesheet" href="../../../src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="../../../src/html/projects.html">
+        <i class="fas fa-arrow-left"></i>
+        <span>Retour</span>
+    </a>
+</header>
+
+<!-- PROJECT CONTENT -->
+<div class="project-content">
+
+    <!-- TITLE -->
+    <div class="title">
+        <h1>Se présenter sur Internet</h1>
+        <div class="title-icons">
+            <i class="fa-regular fa-image"></i>
+        </div>
+    </div>
+
+    <p class="sub">SAÉ11 · 1ère année · Difficulté : ★☆☆☆</p>
+
+    <!-- DESCRIPTION -->
+    <p class="text">
+        <span>Description</span><br><br>
+        Ce projet avait pour objectif de sensibiliser aux
+        <strong>enjeux de la cybersécurité</strong> à travers
+        l’analyse de plusieurs types d’attaques informatiques
+        courantes.
+        <br><br>
+        En groupe, nous avons étudié et présenté trois attaques :
+        le <strong>phishing</strong>, l’<strong>injection SQL</strong>
+        et les <strong>ransomwares</strong>.
+        <br><br>
+        Pour chacune, nous avons décrit le déroulement de l’attaque,
+        les failles exploitées ainsi que les mesures de sécurité
+        permettant de les prévenir ou d’en limiter l’impact.
+    </p>
+
+    <!-- COMPÉTENCES -->
+    <p class="text">
+        <span>Compétences développées</span><br><br>
+        • Sensibilisation aux cyberattaques courantes<br>
+        • Analyse de scénarios d’attaque<br>
+        • Compréhension des failles de sécurité<br>
+        • Travail collaboratif et restitution orale<br>
+        • Vulgarisation de notions de cybersécurité
+    </p>
+
+    <!-- VISUELS -->
+    <div class="illustration">
+
+        <span>Diaporama (aperçu)</span><br><br>
+
+        <!-- MINIATURE -->
+        <img 
+            src="../../../src/assets/projects/p4-preview.jpg"
+            alt="Aperçu diaporama cybersécurité"
+            class="project-image"
+            onclick="openZoom(this.src)"
+        >
+
+        <br><br>
+
+        <a href="../../../src/assets/projects/SAÉ14.pdf"
+           class="project-button"
+           target="_blank">
+            Ouvrir le diaporama PDF
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ZOOM IMAGE -->
+<div class="image-zoom" id="imageZoom" onclick="closeZoom()">
+    <img id="zoomedImage" src="" alt="Zoom projet">
+</div>
+
+<script src="../../../src/js/main.js"></script>
+
+<script>
+function openZoom(src) {
+    const zoom = document.getElementById("imageZoom");
+    const img = document.getElementById("zoomedImage");
+    img.src = src;
+    zoom.classList.add("active");
+}
+
+function closeZoom() {
+    document.getElementById("imageZoom").classList.remove("active");
+}
+</script>
+
+</body>
+</html>
