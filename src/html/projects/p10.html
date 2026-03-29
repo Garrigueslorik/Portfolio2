@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R4.Cyber.09 - Lorik Garrigues</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../src/assets/icons/projects.png">
+    <link rel="stylesheet" href="../../../src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="../../../src/html/projects.html">
+        <i class="fas fa-arrow-left"></i>
+        <span>Retour</span>
+    </a>
+</header>
+
+<!-- PROJECT CONTENT -->
+<div class="project-content">
+
+    <div class="title">
+        <h1>Attaques &amp; contre-mesures réseau</h1>
+        <div class="title-icons">
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa-solid fa-shield-halved"></i>
+        </div>
+    </div>
+
+    <p class="sub"> R4.Cyber.09 · 2ème année · Sécurité des réseaux commutés · Difficulté : ★★★★★ </p>
+
+    <p class="text">
+        <span>Description :</span>
+        <br><br>
+        Dans le cadre du TP R4.Cyber.09 intitulé <em>Opération Ghost</em>, ce projet consistait à mener et contrer des attaques réseau avancées dans un environnement simulé sous GNS3 avec Kali Linux, selon un scénario réaliste d'infiltration d'un centre hospitalier.
+        <br><br>
+        Le travail s'est articulé autour de trois grandes familles d'attaques et leurs contre-mesures associées :
+        <br><br>
+        — <strong>Attaque STP (BPDU Flood)</strong> : prise de contrôle du Root Bridge par injection de trames BPDU malveillantes via Scapy, forçant une nouvelle élection STP et redirigeant l'intégralité du trafic LAN à travers la machine attaquante. Contre-mesures : <em>Root Guard</em> et <em>BPDUguard</em>.
+        <br><br>
+        — <strong>Attaque SPAN (port mirroring)</strong> : exploitation d'un accès Telnet non sécurisé pour configurer une session SPAN malveillante sur le switch opérateur, permettant une écoute passive du trafic interne via Wireshark. Contre-mesures : suppression de la session, désactivation de Telnet, SSH v2 et ACL d'administration.
+        <br><br>
+        — <strong>Attaque Man-in-the-Middle (ARP Spoofing)</strong> : empoisonnement bidirectionnel du cache ARP de PC1 et SRV1 avec <em>arpspoof</em>, interceptant en clair les communications HTTP entre les deux hôtes. Contre-mesures : <em>BPDUfilter</em> et segmentation VLAN (VLAN 10 Serveurs / VLAN 20 Utilisateurs / VLAN 99 Quarantaine).
+        <br><br>
+        Ce TP m'a permis de comprendre concrètement les vulnérabilités des protocoles de couche 2, de manipuler des outils d'attaque réels dans un cadre pédagogique et légal, et de déployer des contre-mesures efficaces sur des équipements Cisco IOS.
+        <br><br><br>
+
+        <span>Compétences mobilisées :</span>
+        <br><br>
+        Protocole STP (IEEE 802.1D) · Scapy · Wireshark · tcpdump · arpspoof (dsniff) · GNS3 · Cisco IOS · VLANs · SSH v2 · ACL · BPDUguard · Root Guard · BPDUfilter · ARP Spoofing
+        <br><br><br>
+
+        <span>Livrable du projet :</span>
+        <br><br>
+
+        <div class="illustration">
+            <a href="../../../src/assets/projects/TP_R409_PICOT_GARRIGUES.pdf" target="_blank" style="text-decoration:none;">
+                <i class="fa-solid fa-file-pdf"></i>
+                Consulter le rapport du TP (R4.Cyber.09)
+            </a>
+        </div>
+
+        <br><br><br><br>
+    </p>
+
+</div>
+
+<script src="../../../src/js/main.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>

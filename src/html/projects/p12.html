@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerShell AD - Lorik Garrigues</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../src/assets/icons/projects.png">
+    <link rel="stylesheet" href="../../../src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="../../../src/html/projects.html">
+        <i class="fas fa-arrow-left"></i>
+        <span>Retour</span>
+    </a>
+</header>
+
+<!-- PROJECT CONTENT -->
+<div class="project-content">
+
+    <div class="title">
+        <h1>Automatisation Active Directory</h1>
+        <div class="title-icons">
+            <i class="fa-brands fa-windows"></i>
+            <i class="fa-solid fa-terminal"></i>
+        </div>
+    </div>
+
+    <p class="sub"> PowerShell · 2ème année · Administration système & scripting · Difficulté : ★★★★☆ </p>
+
+    <p class="text">
+        <span>Description :</span>
+        <br><br>
+        Ce projet consistait à déployer et administrer un environnement <strong>Windows Server</strong> complet, puis à automatiser la gestion des comptes utilisateurs via un script <strong>PowerShell</strong>.
+        <br><br>
+        La première partie a porté sur la configuration d'un lab Windows Server : installation et promotion d'un contrôleur de domaine <strong>Active Directory</strong> (forêt <code>rt.local</code>), configuration du rôle <strong>DNS</strong> intégré et déploiement d'un serveur <strong>DHCP</strong> avec plage d'adresses et options de scope.
+        <br><br>
+        La seconde partie a consisté à développer le script <code>Manage-ADUsers.ps1</code>, capable de gérer le cycle de vie des comptes AD à partir d'un fichier CSV. Le script supporte deux actions principales :
+        <br><br>
+        — <strong>Création</strong> : vérification de l'existence du compte, création du compte AD dans l'OU ciblée, création du dossier personnel dans <code>C:\UsersData\</code> avec application des droits NTFS via <code>FileSystemAccessRule</code>.
+        <br><br>
+        — <strong>Suppression</strong> : vérification de l'existence du compte, archivage horodaté du dossier personnel en ZIP dans <code>C:\Archives\</code>, suppression du dossier source puis suppression du compte AD.
+        <br><br>
+        Le script intègre un paramètre <code>-WhatIf</code> pour simuler les opérations sans les exécuter, ainsi qu'un système de logs horodatés dans <code>C:\log\</code> pour tracer chaque action et chaque erreur.
+        <br><br><br>
+
+        <span>Compétences mobilisées :</span>
+        <br><br>
+        PowerShell · Windows Server · Active Directory · DNS · DHCP · Gestion des droits NTFS · Scripting · Automatisation · Journalisation · Import CSV
+        <br><br><br>
+
+        <span>Livrables du projet :</span>
+        <br><br>
+
+        <div class="illustration">
+            <a href="../../../src/assets/projects/Powershell_GARRIGUES.zip" target="_blank" style="text-decoration:none;">
+                <i class="fa-solid fa-file-zipper"></i>
+                Télécharger l'archive du projet (PowerShell AD)
+            </a>
+        </div>
+
+        <br><br><br><br>
+    </p>
+
+</div>
+
+<script src="../../../src/js/main.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>

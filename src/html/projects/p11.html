@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Agency - Lorik Garrigues</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../src/assets/icons/projects.png">
+    <link rel="stylesheet" href="../../../src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="../../../src/html/projects.html">
+        <i class="fas fa-arrow-left"></i>
+        <span>Retour</span>
+    </a>
+</header>
+
+<!-- PROJECT CONTENT -->
+<div class="project-content">
+
+    <div class="title">
+        <h1>API REST – Agence de vols</h1>
+        <div class="title-icons">
+            <i class="fa-solid fa-plane-departure"></i>
+            <i class="fa-solid fa-code"></i>
+        </div>
+    </div>
+
+    <p class="sub"> Flight Agency · 2ème année · Développement d'une API REST · Difficulté : ★★★★★ </p>
+
+    <p class="text">
+        <span>Description :</span>
+        <br><br>
+        Ce projet consistait à concevoir et développer une API REST complète en Java avec le framework <strong>Spring Boot</strong>, simulant le système backend d'une agence de réservation de vols.
+        <br><br>
+        L'application expose plusieurs endpoints permettant de gérer trois entités principales : les <strong>vols</strong>, les <strong>clients</strong> et les <strong>réservations</strong>. La recherche de vols supporte des filtres dynamiques (origine, destination, date, prix maximum) grâce à l'utilisation de <em>Spring Data JPA Specifications</em>.
+        <br><br>
+        La persistance des données repose sur une base <strong>H2 en mémoire</strong>, initialisée automatiquement au démarrage via un fichier <code>data.sql</code>. La validation des requêtes entrantes est assurée par les annotations <code>@Valid</code> de Bean Validation, avec une gestion centralisée des erreurs via un <em>GlobalExceptionHandler</em>.
+        <br><br>
+        La documentation de l'API est générée automatiquement et accessible via <strong>Swagger UI / OpenAPI</strong>, offrant une interface interactive pour tester l'ensemble des endpoints sans client externe.
+        <br><br><br>
+
+        <span>Compétences mobilisées :</span>
+        <br><br>
+        Java 17 · Spring Boot 3 · Spring Data JPA · API REST · H2 Database · Maven · Swagger UI / OpenAPI · Bean Validation · Architecture en couches (Controller / Service / Repository) · Gestion d'exceptions globale
+        <br><br><br>
+
+        <span>Livrable du projet :</span>
+        <br><br>
+
+        <div class="illustration">
+            <a href="../../../src/assets/projects/flight-agency.zip" target="_blank" style="text-decoration:none;">
+                <i class="fa-solid fa-file-zipper"></i>
+                Télécharger l'archive du projet (Flight Agency)
+            </a>
+        </div>
+
+        <br><br><br><br>
+    </p>
+
+</div>
+
+<script src="../../../src/js/main.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
